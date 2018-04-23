@@ -1,0 +1,16 @@
+{
+  "name": "huopu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/msz2017/huopu.git",
+  "author": "shuz <15558057209@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel example/index.html",
+    "build": "parcel build src/huoui.js -o huoui.min.js"
+  },
+  "dependencies": {
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "^1.7.1"
+  }
+}
