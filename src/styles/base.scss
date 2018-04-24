@@ -1,1 +1,46 @@
-body {}
+$black: #373737;
+$lightgray: #d6d6d6;
+$red: #d43c33;
+$darkgray: #898989;
+$lightblue: #4A90E2;
+$mediumgray: #c1c1c1;
+$lightbgrey: #eaeaea;
+$yellow:#f5a623;
+$screen :375;
+@function vw($px) {
+    @return $px / $screen * 100vw;
+}
+
+@mixin position($position:absolute, $top:null, $left:null, $right:null, $bottom:null) {
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.huoui-toast {
+    @include position(fixed, 0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.huoui-toast_body {
+    @include flex-center;
+}
+
+.huoui-toast_content {
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: vw(10);
+    text-align: center;
+    color: $yellow;
+    font-size: vw(22);
+    padding: vw(18) 0;
+}
