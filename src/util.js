@@ -1,7 +1,5 @@
-import { template } from 'lodash'
+// import { template } from 'lodash'
 
-export const render = (filename, data, cb) => {
-    // fs.readFile(`src/toast/toast.html`)
-    // const compiled = template(tpl);
-    // return compiled(data);
+export const render = (tpl, context) => {
+    return tpl.replace(/{{(.*?)}}/g, (match, key) => context[key.trim()]);
 }
