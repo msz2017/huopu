@@ -5,7 +5,7 @@ const toast = (msg = '', { duration = 2000 } = {}) => {
     $('body').append($tpl);
 
     setTimeout(() => {
-
+        $tpl.remove();
     }, duration);
 }
 
