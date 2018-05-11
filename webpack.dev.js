@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const common = require('./webpack.config')
 
 const config = {
-    entry: ['./src/huoui', './src/styles/base.scss'],
     module: {
         rules: [
             {

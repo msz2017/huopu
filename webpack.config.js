@@ -1,6 +1,7 @@
 const path = require('path');
 
 const config = {
+    entry:'./src/huopu',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'huoui.min.js',
@@ -28,7 +29,6 @@ const config = {
     },
     resolve: {
         alias: {
-            "dist": path.resolve(__dirname, 'dist'),
             "src": path.resolve(__dirname, 'src'),
         }
     },
