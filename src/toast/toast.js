@@ -1,16 +1,12 @@
-import { render } from '../util';
+import $ from '../util'
 import tpl from './toast.html'
-const toast = (msg = '', options = {}) => {
-    options = Object.assign({}, { duration: 2000 }, options);
-
-    const $tpl = render(tpl, { msg });
-    console.log($tpl)
+const toast = (msg = '', { duration = 2000 } = {}) => {
+    const $tpl = $.render(tpl, { msg });
+    $('body').append($tpl);
 
     setTimeout(() => {
 
-    }, options.duration);
-
-    render('toast', { msg: 'haha' })
+    }, duration);
 }
 
 export default toast;
