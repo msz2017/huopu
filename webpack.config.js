@@ -42,15 +42,12 @@ const config = {
             "src": path.resolve(__dirname, 'src'),
         }
     },
-    mode: 'development',
-    devServer: {
-        contentBase: path.join(__dirname, "example"),
-        compress: true,
-        port: 1234,
-        open: false,
-        index: 'index.html',
-        publicPath: '/assets/'
-    }
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'huoui.css',
+            chunkFilename: 'huoui.css',
+        })
+    ]
 };
 
 module.exports = config;

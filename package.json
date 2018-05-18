@@ -6,14 +6,16 @@
   "author": "shuz <15558057209@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "babel-loader": "^7.1.4",
     "html-loader": "^0.5.5",
     "node-sass": "^4.8.3",
+    "optimize-css-assets-webpack-plugin": "^4.0.1",
     "parcel-bundler": "^1.7.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.6.0",
     "webpack-dev-server": "^3.1.3",
     "webpack-merge": "^4.1.2"
