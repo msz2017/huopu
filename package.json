@@ -6,8 +6,8 @@
   "author": "shuz <15558057209@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "dependencies": {
     "babel-loader": "^7.1.4",
