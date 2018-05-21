@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>huoui</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/huoui.css">
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+
+        .example-item {
+            display: block;
+            padding: 10px 0;
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+    </style>
 </head>
-<body>     
+
+<body>
+    <div style="height: 100vh;overflow: hidden;display: flex">
+        <div style="padding: 0 20px;flex:1;overflow-y: auto">
+            <a href="javascript:" class="example-item" id="toast">toast</a>
+        </div>
+    </div>
     <script src="/assets/huoui.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
