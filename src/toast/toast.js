@@ -7,11 +7,11 @@ const toast = (msg = '', { duration = 2000 } = {}) => {
         $tpl.css({ opacity: 1 })
     }, 10);
     setTimeout(() => {
-        $tpl.css({ opacity: 0 })
+        // $tpl.css({ opacity: 0 })
     }, duration);
 
     setTimeout(() => {
-        $tpl.remove();
+        // $tpl.remove();
     }, duration + 300);
 }
 
