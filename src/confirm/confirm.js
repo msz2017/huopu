@@ -1,7 +1,7 @@
 import $ from '../util'
 import tpl from './confirm.html'
 const confirm_ = (options = {}) => {
-    options = Object.assign(options, {
+    options = $.merge({}, {
         title: '执行该操作',
         content: {
             text: '',
@@ -16,7 +16,7 @@ const confirm_ = (options = {}) => {
             label: '取消',
             className: ''
         }
-    });
+    }, options);
 
     const $tpl = $.render(tpl, options);
     $('body').append($tpl);

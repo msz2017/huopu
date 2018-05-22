@@ -1,4 +1,4 @@
-import { template } from 'lodash'
+import { template, merge } from 'lodash'
 import $ from 'balajs';
 
 const render = (tpl, context) => {
@@ -112,7 +112,8 @@ Object.assign($, {
     render,
     noop: function () {
 
-    }
+    },
+    merge
 })
 
 export default $;
