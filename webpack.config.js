@@ -18,7 +18,10 @@ const config = {
                 use: [{
                     loader: 'html-loader',
                     options: {
-                        minimize: true
+                        minimize: true,
+                        caseSensitive: true,
+                        collapseWhitespace: true,
+                        keepClosingSlash: true,
                     }
                 },]
             },
