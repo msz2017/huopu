@@ -29,14 +29,6 @@ const config = {
                 test: /.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
-            },
-            {
-                test: /\.s?[ac]ss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader',
-                ],
             }
         ]
     },

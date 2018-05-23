@@ -8,6 +8,18 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 const config = {
     mode: 'production',
+    module: {
+        rules: [
+            {
+                test: /\.s?[ac]ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader?modules',
+                    'sass-loader',
+                ],
+            }
+        ]
+    },
     plugins: [new BundleAnalyzerPlugin()],
     optimization: {
         minimizer: [
