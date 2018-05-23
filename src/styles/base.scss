@@ -28,8 +28,7 @@ $duration:300ms;
 
 :global {
     @import './global.scss';
+    @import './toast.scss';
+    @import './confirm.scss';
 }
 
-@import './toast.scss';
-
-@import './confirm.scss';
