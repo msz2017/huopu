@@ -1,4 +1,6 @@
-import { template, merge } from 'lodash'
+import template from 'lodash/template'
+import merge from 'lodash/merge'
+
 import $ from 'balajs';
 
 const render = (tpl, context) => {

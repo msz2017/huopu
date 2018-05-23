@@ -8,7 +8,7 @@ const config = {
         contentBase: path.join(__dirname, "example"),
         compress: true,
         port: 1234,
-        open: false,
+        open: true,
         index: 'index.html',
         publicPath: '/assets/'
     }
