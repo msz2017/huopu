@@ -56,24 +56,6 @@
     overflow: hidden;
 }
 
-.toast-msg {
-    min-width: vw(334);
-    padding: vw(18);
-    background-color: rgba(0, 0, 0, .75);
-    border-radius: 10px;
-    color: #F5A623;
-    font-size: vw(22);
-    overflow: hidden;
-}
-
-.border-default {
-    border: 1px solid $darkgray;
-}
-
-.border-primary {
-    border: 1px solid $red;
-}
-
 .color-primary {
     color: $red;
 }
